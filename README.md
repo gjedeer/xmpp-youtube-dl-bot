@@ -25,6 +25,8 @@ This bot has two main modes of operation:
 
 # Usage
 
+Log into your XMPP bot's account and add your main account to the roster. Only people from the roster are allowed to use the bot.
+
 Send the bot a link from your XMPP client. The bot supports an impressive number of video hosting websites via youtube-dl: https://rg3.github.io/youtube-dl/supportedsites.html
 
 # Known issues
