@@ -8,18 +8,20 @@ This bot has two main modes of operation:
 
 1. Install: xmpppy, requests and youtube-dl.
 
-    sudo apt install python-xmpp python-requests python-pip
-    sudo pip install youtube-dl
+        sudo apt install python-xmpp python-requests python-pip
+        sudo pip install youtube-dl
 
 2. Create an XMPP account for your bot. Use a server which supports XEP-0363 HTTP Upload. Consult https://compliance.conversations.im/
 
-3. Copy settings.py-example to settings.py and edit the file.
+3. Copy `settings.py-example` to `settings.py` and edit the file.
 
 4. Run the script
-    python bot.py
+
+       python bot.py
 
 5. Set up a cron job to update youtube-dl
-    43 7 * * * pip install --upgrade youtube-dl
+
+       43 7 * * * pip install --upgrade youtube-dl
 
 6. Optionally: make it run on startup. Systemd file is attached, for other process supervisor systems: PRs welcome.
 
