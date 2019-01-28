@@ -1,0 +1,12 @@
+[Unit]
+AssertPathExists=/home/gdr/ytdl-xmpp
+
+[Service]
+WorkingDirectory=/home/gdr/ytdl-xmpp
+ExecStart=/usr/bin/python /home/gdr/ytdl-xmpp/bot.py
+Restart=always
+PrivateTmp=true
+NoNewPrivileges=true
+
+[Install]
+WantedBy=default.target

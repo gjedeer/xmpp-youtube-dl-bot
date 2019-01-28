@@ -1,0 +1,29 @@
+# Bot's XMPP account
+jid = 'bot@example.domain'
+password = 'd91IuvpEL1S'
+
+# XMPP HTTP CONNECT proxy settings
+# Example: {'host':'proxy.my.net','port':8080,'user':'me','password':'secret'}
+# Empty: No proxy
+# http://xmpppy.sourceforge.net/apidocs/xmpp.client.Client-class.html#connect
+proxy = {}
+
+# Where to save downloaded files
+out_directory = '/shared/youtube-dl'
+
+# Send downloaded file by XMPP HTTP Upload 
+send_after_download = True
+
+# After HTTP Upload is completed, delete the file from local disk
+delete_after_send = True
+
+# Download audio instead of video
+#ydl_opts = {
+#    'format': 'bestaudio/best',
+#    'keepvideo': False,
+#    'postprocessors': [{
+#        'key': 'FFmpegExtractAudio',
+#        'preferredcodec': 'mp3',
+#        'preferredquality': '192',
+#    }],
+#}
