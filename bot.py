@@ -133,6 +133,7 @@ def messageCB(sess, mess):
         })
 
     message_cb(to=fromjid, text='Finished processing: ' + body)
+    reload('youtube_dl')
 
 def send_url_message(sess, to, url):
     msg = protocol.Message(to, url, typ='chat')
